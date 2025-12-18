@@ -1,13 +1,13 @@
-# ☁️ Personal Cloud Backend
+#  Personal Cloud Backend
 
-This repository contains the **backend service** for a Personal Cloud application.
+This repository contains the backend service for a Personal Cloud application.
 
-The backend is implemented as a **Flask-based REST API** using a proper application package structure.  
-It handles **authentication, file uploads, file downloads, database access**, and communication with client applications such as an **Android app**.
+The backend is implemented as a Flask-based REST API using a proper application package structure.  
+It handles authentication, file uploads, file downloads, database access, and communication with client applications such as an Android app.
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 - Python 3.10+
 - Flask
@@ -18,7 +18,7 @@ It handles **authentication, file uploads, file downloads, database access**, an
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 personal-cloud-backend/
@@ -44,7 +44,7 @@ personal-cloud-backend/
 
 ---
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 Make sure the following are installed:
 
@@ -61,11 +61,11 @@ python3 --version
 
 ---
 
-## 🔧 Configuration Reference
+##  Configuration Reference
 
 This application requires several environment variables to function correctly. These variables should be stored in a `.env` file in the project's root directory.
 
-The **🚀setup instructions** below will guide you through creating this file. Here is the template you will need to copy and fill in with your own values:
+The **setup instructions** below will guide you through creating this file. Here is the template you will need to copy and fill in with your own values:
 
 ```ini
 # .env
@@ -86,70 +86,50 @@ DATABASE_URL='sqlite:///database.db'
 ---
 
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
-1️⃣ **Clone the repository**
+1. Clone the repository
 
 ```bash
 git clone https://github.com/sachinisandreas-del/personal-cloud-server
 cd personal-cloud-backend
 ```
 
-2️⃣ **Create the environment file**
+2. Create the environment file
 
 Now that you are in the project root, create the .env file.
 
-- **Linux / macOs**
+```bash
+touch .env
+```
   
-  ```bash
-  touch .env
-  ```
-- **Windows**
   
-  You can create the file using the Command Prompt or PowerShell:
-  ```bash
-  echo. > .env
-  ```
 Next, open the new .env file and copy the contents from the **[Configuration Reference](#-configuration-reference)** section above. Be sure to fill in your own secret values.
 
 
-3️⃣ **Create a virtual environment**
+3. Create a virtual environment
 
 ```bash
 python3 -m venv venv
 ```
 
-4️⃣ **Activate the virtual environment**
+4. Activate the virtual environment
 
--   **Linux / macOS:**
-
-    ``` bash
-    source venv/bin/activate
-    ```
-
--   **Windows:**
-
-    ```  bash
-    venv\Scripts\activate
-    ```
+``` bash
+source venv/bin/activate
+```
 
 You should see `(venv)` in your terminal prompt.
 
-5️⃣ **Install dependencies**
+5. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-> **Note:** If `requirements.txt` does not exist yet, you can create it with the following commands:
-> ```bash
-> pip install flask werkzeug
-> pip freeze > requirements.txt
-> ```
-
 ---
 
-## 🖥️ Running the Application (Terminal)
+##  Running the Application (Terminal)
 
 From the project root (with venv activated):
 
@@ -161,7 +141,7 @@ The backend will start on:
 http://127.0.0.1:5000/
 ```
 
-## ▶️ Running the Application (IntelliJ IDEA)
+##  Running the Application (IntelliJ IDEA)
 
 1. Ensure the **Python plugin** is installed and enabled
 2. Open **Settings &rarr; Project &rarr; Python Interpreter.**
@@ -176,13 +156,13 @@ http://127.0.0.1:5000/
    - **Script path:** `path/to/personal-cloud-backend/run.py`
    - **Working directory:** `path/to/personal-cloud-backend`
    - **Python interpreter:** `venv/bin/python3`
-6. Click **Apply &rarr; Run** ▶️
+6. Click **Apply &rarr; Run** 
 
 IntelliJ will now run the backend exactly the same way as the terminal.
 
 ---
 
-## 📡 API Overview
+##  API Overview
 
 | Method | Endpoint      | Description        |
 |--------|---------------|--------------------|
@@ -194,7 +174,7 @@ IntelliJ will now run the backend exactly the same way as the terminal.
 
 ---
 
-## 🔐 Security & File Handling
+##  Security & File Handling
 
 - Filenames are sanitized using secure_filename
 - Files are stored using UUID-based names to prevent collisions
@@ -202,7 +182,7 @@ IntelliJ will now run the backend exactly the same way as the terminal.
 
 ---
 
-## 📝 Development Notes
+##  Development Notes
 
    - Always activate the virtual environment before running the app
    - Do not commit the `venv/` directory
@@ -212,7 +192,7 @@ IntelliJ will now run the backend exactly the same way as the terminal.
 
 ---
 
-## 🙈 .gitignore
+##  .gitignore
 
 This project includes a comprehensive `.gitignore` file to ensure that temporary files, sensitive credentials, and environment-specific folders are not committed to the repository.
 
@@ -264,14 +244,4 @@ Thumbs.db
 
 ---
 
-
-## 🧑‍💻 Author
-
-**Andreas Sachinis**
-
----
-
-## ©️ License
-
-This project is intended for personal and educational use.
 
